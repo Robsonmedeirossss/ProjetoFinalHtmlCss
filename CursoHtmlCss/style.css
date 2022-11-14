@@ -1,0 +1,156 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/*Resets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body*/
+
+body{
+    height: 100vh;
+    background-color: 
+    #F0F0F0;
+    font-family: 'Inter';
+}
+
+/*Header*/
+
+header{
+    height: 20vh;
+}
+
+header .margin{
+    height: 100%;
+}
+
+.margin{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #1E1E1E;
+    transition: .3s;
+}
+
+ul li a:hover{
+    color: #336FF8;
+}
+
+/*Principal*/
+
+.principal .margin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.principal{
+    padding: 8rem 0;
+}
+
+.sobre-o-projeto{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 60%;
+}
+
+.sobre-o-projeto h1{
+    color: #F51BA3;
+    font-size: 2.5rem;
+}
+
+.sobre-o-projeto button{
+    width: 14rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #457EFF;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.sobre-o-projeto button:hover{
+    filter: brightness(120%);
+}
+
+/*Cards*/
+
+.container-cards{
+    background-color: #457EFF;
+    padding: 4rem 0;
+    
+}
+
+.container-cards .margin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-cards .margin h1{
+    color: white;
+}
+
+.container-cards .margin .cards{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.container-cards .margin .cards .card{
+    background-color: white;
+    border-radius: .5rem;
+}
+
+.container-cards .margin .cards .card p{
+    margin-left: .5rem;
+    margin-bottom: .5rem;
+}
+
+/*Footer*/
+
+footer{
+    padding: 2rem 0;
+    background-color: #336FF8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: white;
+}
+
+
+@media(max-width: 1150px){
+    .container-cards .margin{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .container-cards .margin .cards{
+        flex-wrap: wrap;
+    }
+}
